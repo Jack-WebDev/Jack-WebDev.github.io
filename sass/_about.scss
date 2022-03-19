@@ -1,0 +1,351 @@
+@import "./variables";
+
+.about {
+  margin: 7em 0;
+  padding: 10em 2em 0 2em;
+  text-align: center;
+
+  .about__me {
+    h2 {
+      padding: 10px 0;
+      font-weight: 300;
+      color: $Primary-color;
+
+      span {
+        padding-right: 10px;
+        font-size: 0.8em;
+        color: $Primary-color;
+      }
+    }
+
+    p {
+      padding-bottom: 10px;
+      line-height: 1.5;
+    }
+  }
+
+  .skills {
+    padding-top: 3em;
+
+    h2 {
+      color: $Primary-color;
+      padding: 10px 0 20px;
+      font-weight: 300;
+    }
+
+    .toolbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 100px;
+      margin-top: 5em;
+
+      svg {
+        width: 15%;
+        filter: invert(1);
+      }
+
+      .tailwind {
+        width: 15%;
+        filter: invert(1);
+        position: relative;
+        top: -55px;
+        left: 50px;
+      }
+
+      .jquery {
+        width: 40%;
+        filter: invert(1);
+        position: relative;
+        top: -60px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    margin: 7em 0;
+    padding: 15em 2em;
+    text-align: center;
+
+    .about__me {
+      h2 {
+        padding: 10px 0;
+        font-weight: 300;
+        font-size: 2em;
+        color: $Primary-color;
+
+        span {
+          padding-right: 10px;
+          font-size: 0.8em;
+          color: $Primary-color;
+        }
+      }
+
+      p {
+        padding: 0 50px 10px;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+    }
+
+    .skills {
+      padding: 3em 3em 0;
+
+      h2 {
+        color: $Primary-color;
+        padding: 10px 0 20px;
+        font-weight: 300;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .toolbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-top: 5em;
+
+        svg {
+          width: 10%;
+          filter: invert(1);
+        }
+
+        .jquery {
+          width: 25%;
+          filter: invert(1);
+          position: relative;
+          top: 0;
+        }
+
+        .tailwind {
+          width: 10%;
+          filter: invert(1);
+          position: unset;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    margin: 7em 0;
+    padding: 15em 2em 0;
+    text-align: center;
+
+    .about__me {
+      h2 {
+        padding: 10px 0;
+        font-weight: 300;
+        font-size: 2em;
+        color: $Primary-color;
+
+        span {
+          padding-right: 10px;
+          font-size: 0.8em;
+          color: $Primary-color;
+        }
+      }
+
+      p {
+        padding: 0 50px 10px;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+    }
+
+    .skills {
+      padding-top: 3em;
+
+      h2 {
+        color: $Primary-color;
+        padding: 10px 0 20px;
+        font-weight: 300;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .toolbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-top: 5em;
+        margin-bottom: 3em;
+
+        svg {
+          width: 8%;
+          filter: invert(1);
+        }
+
+        .jquery {
+          width: 15%;
+          filter: invert(1);
+          position: relative;
+          top: 0;
+        }
+
+        .tailwind {
+          width: 10%;
+          filter: invert(1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .about {
+    margin: 7em 0;
+    padding: 15em 2em 0 2em;
+    text-align: center;
+
+    .about__me {
+      h2 {
+        padding: 10px 0;
+        font-weight: 300;
+        font-size: 2em;
+        color: $Primary-color;
+
+        span {
+          padding-right: 10px;
+          font-size: 0.8em;
+          color: $Primary-color;
+        }
+      }
+
+      p {
+        padding: 0 50px 10px;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+    }
+
+    .skills {
+      padding-top: 3em;
+
+      h2 {
+        color: $Primary-color;
+        padding: 10px 0 20px;
+        font-weight: 300;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .toolbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-top: 5em;
+        margin-bottom: 1em;
+
+        svg {
+          width: 6%;
+          filter: invert(1);
+        }
+
+        .jquery {
+          width: 15%;
+          filter: invert(1);
+          position: relative;
+          top: 0;
+        }
+
+        .tailwind {
+          width: 7%;
+          filter: invert(1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .about {
+    margin: 7em 0;
+    padding: 15em 2em 0 2em;
+    text-align: center;
+
+    .about__me {
+      h2 {
+        padding: 10px 0;
+        font-weight: 300;
+        font-size: 2em;
+        color: $Primary-color;
+
+        span {
+          padding-right: 10px;
+          font-size: 0.8em;
+          color: $Primary-color;
+        }
+      }
+
+      p {
+        padding: 0 50px 10px;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+    }
+
+    .skills {
+      padding-top: 3em;
+
+      h2 {
+        color: $Primary-color;
+        padding: 10px 0 20px;
+        font-weight: 300;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .toolbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-top: 5em;
+
+        svg {
+          width: 6%;
+          filter: invert(1);
+        }
+
+        .jquery {
+          width: 15%;
+          filter: invert(1);
+          position: relative;
+          top: 0;
+        }
+
+        .tailwind {
+          width: 7%;
+          filter: invert(1);
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
