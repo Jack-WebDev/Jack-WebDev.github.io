@@ -29,7 +29,7 @@ body {
 
 .light_mode {
   --header: #fff;
-  --secondary: rgba(55, 155, 0, 0.1);
+  --secondary: rgba(245, 245, 245);
   --text: var(var(--header));
   --invert: invert(0);
   --toggle: rba(211, 211, 211);
@@ -69,7 +69,7 @@ header .navbar label #toggleMode {
 header .navbar label .toggle {
   width: 2.5em;
   height: 1.5em;
-  padding: 2px 5px;
+  padding: 4px 5px;
   border-radius: 5em;
   background-color: #d3d3d3;
 }
@@ -84,7 +84,7 @@ header .navbar label .toggle_circle {
 }
 header .navbar label #toggleMode:checked ~ .toggle > .toggle_circle {
   background-image: url(../images/Moon_Icon.png);
-  transform: translateX(10px);
+  transform: translateX(15px);
 }
 header .navbar .hamburger {
   padding-right: 3em;
@@ -479,7 +479,7 @@ body {
 
 .light_mode {
   --header: #fff;
-  --secondary: rgba(55, 155, 0, 0.1);
+  --secondary: rgba(245, 245, 245);
   --text: var(var(--header));
   --invert: invert(0);
   --toggle: rba(211, 211, 211);
@@ -713,7 +713,7 @@ body {
 
 .light_mode {
   --header: #fff;
-  --secondary: rgba(55, 155, 0, 0.1);
+  --secondary: rgba(245, 245, 245);
   --text: var(var(--header));
   --invert: invert(0);
   --toggle: rba(211, 211, 211);
@@ -1031,7 +1031,7 @@ body {
 
 .light_mode {
   --header: #fff;
-  --secondary: rgba(55, 155, 0, 0.1);
+  --secondary: rgba(245, 245, 245);
   --text: var(var(--header));
   --invert: invert(0);
   --toggle: rba(211, 211, 211);
@@ -1600,7 +1600,7 @@ body {
 
 .light_mode {
   --header: #fff;
-  --secondary: rgba(55, 155, 0, 0.1);
+  --secondary: rgba(245, 245, 245);
   --text: var(var(--header));
   --invert: invert(0);
   --toggle: rba(211, 211, 211);

@@ -42,9 +42,8 @@ header {
       .toggle {
         width: 2.5em;
         height: 1.5em;
-        padding: 2px 5px;
+        padding: 4px 5px;
         border-radius: 5em;
-        //background-color: #eeee;
         background-color: #d3d3d3;
         
 
@@ -63,8 +62,7 @@ header {
 
       #toggleMode:checked ~ .toggle > .toggle_circle {
         background-image: url(../images/Moon_Icon.png);
-        //background-color: #eee;
-        transform: translateX(10px);
+        transform: translateX(15px);
       }
 
     }
