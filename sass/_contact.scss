@@ -7,13 +7,13 @@
 
   h2 {
     text-align: center;
-    color: orangered;
+    color: $Primary-color;
     font-weight: 300;
     padding-bottom: 1em;
     padding-top: 2em;
 
     span {
-      color: orangered;
+      color: $Primary-color;
       font-size: 0.8em;
     }
   }
@@ -39,7 +39,7 @@ footer {
         }
 
         .github {
-          filter: invert(1);
+          filter: var(--invert);
         }
       }
 
@@ -57,7 +57,7 @@ footer {
       margin-top: 20px;
 
       a {
-        color: orangered;
+        color: $Primary-color;
         text-decoration: none;
       }
     }
@@ -72,13 +72,11 @@ footer {
 
     h2 {
       text-align: center;
-      color: orangered;
       font-weight: 300;
       padding-bottom: 1em;
       padding-top: 2em;
 
       span {
-        color: orangered;
         font-size: 0.8em;
       }
     }
@@ -103,7 +101,7 @@ footer {
           }
 
           .github {
-            filter: invert(1);
+            filter: var(--invert);
           }
         }
 
@@ -121,7 +119,7 @@ footer {
         margin-top: 20px;
 
         span {
-          color: orangered;
+          color: $Primary-color;
         }
       }
     }
@@ -136,13 +134,11 @@ footer {
 
     h2 {
       text-align: center;
-      color: orangered;
       font-weight: 300;
       padding-bottom: 1em;
       padding-top: 2em;
 
       span {
-        color: orangered;
         font-size: 0.8em;
       }
     }
@@ -167,9 +163,6 @@ footer {
             margin-right: 20px;
           }
 
-          .github {
-            filter: invert(1);
-          }
         }
 
         .whatsapp {
@@ -185,10 +178,6 @@ footer {
       p {
         margin-top: 30px;
         font-size: 20px;
-
-        span {
-          color: orangered;
-        }
       }
     }
   }

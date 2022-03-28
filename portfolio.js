@@ -1,3 +1,4 @@
+// Hamburger Menu
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("navMenu");
 
@@ -12,6 +13,22 @@ document.querySelectorAll(".nav__link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+//Theme Switcher
+
+const toggleMode = document.getElementById("toggleMode");
+
+function checked() {
+  if (this.checked) {
+    document.body.classList.remove("dark_mode");
+    document.body.classList.add("light_mode");
+  } else {
+    document.body.classList.add("dark_mode");
+    document.body.classList.remove("light_mode");
+  }
+}
+
+toggleMode.addEventListener("click", checked);
 
 // const form = document.getElementById('form');
 // const username = document.getElementById('name');

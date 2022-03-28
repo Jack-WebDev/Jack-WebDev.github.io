@@ -8,13 +8,14 @@ header {
   z-index: 10;
   width: auto;
 
+
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #000;
-    height: 10vh;
+    background-color: var(--header);
+    height: 15vh;
 
     .logo {
       padding-left: 2em;
@@ -29,6 +30,43 @@ header {
       .w {
         @extend .j;
       }
+    }
+
+    label {
+      cursor: pointer;
+
+      #toggleMode {
+        display: none;
+      }
+
+      .toggle {
+        width: 2.5em;
+        height: 1.5em;
+        padding: 2px 5px;
+        border-radius: 5em;
+        //background-color: #eeee;
+        background-color: #d3d3d3;
+        
+
+        &_circle {
+          width: 1em;
+          height: 1em;
+          border-radius: 50%;
+          background-image: url(../images/Sun_Icon.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+
+      }
+
+      #toggleMode:checked ~ .toggle > .toggle_circle {
+        background-image: url(../images/Moon_Icon.png);
+        //background-color: #eee;
+        transform: translateX(10px);
+      }
+
     }
 
     .hamburger {
@@ -56,7 +94,7 @@ header {
       gap: 20px;
       width: 100%;
       height: 92vh;
-      background-color: #000;
+      background-color: var(--header);
       text-align: center;
       padding: 4em 0 0;
       transform: translateX(-200%);
@@ -162,7 +200,6 @@ header .navbar .nav__menu.active {
       justify-content: space-between;
       align-items: center;
       flex-wrap: nowrap;
-      background-color: #000;
       height: 15vh;
       padding: 0 2em;
       gap: 55px;
@@ -188,20 +225,6 @@ header .navbar .nav__menu.active {
         cursor: pointer;
         display: none;
 
-        .bar {
-          background-color: $Primary-color;
-          width: 30px;
-          height: 2px;
-          margin: 5px 0;
-          transition: transform 500ms ease;
-        }
-
-        .bar:nth-child(2) {
-          transform: translateX(7px);
-        }
-        .bar:nth-child(3) {
-          transform: translateX(14px);
-        }
       }
 
       .nav__menu {
@@ -280,11 +303,47 @@ header .navbar .nav__menu.active {
       justify-content: space-between;
       align-items: center;
       flex-wrap: nowrap;
-      background-color: #000;
       height: 15vh;
       padding: 0 2em;
       gap: 55px;
       position: relative;
+
+      label {
+        position: relative;
+        left: -65%;
+        cursor: pointer;
+  
+        #toggleMode {
+          display: none;
+        }
+  
+        .toggle {
+          width: 5em;
+          height: 2em;
+          padding: 4px 5px;
+          border-radius: 5em;
+          //background-color: #eeee;
+          
+  
+          &_circle {
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            background-image: url(../images/Sun_Icon.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+  
+  
+        }
+  
+        #toggleMode:checked ~ .toggle > .toggle_circle {
+          background-image: url(../images/Moon_Icon.png);
+          transform: translateX(45px);
+        }
+  
+      }
 
       .nav__menu {
         display: flex;
@@ -320,6 +379,7 @@ header .navbar .nav__menu.active {
         }
       }
     }
+
   }
 }
 
@@ -336,7 +396,6 @@ header .navbar .nav__menu.active {
       justify-content: space-between;
       align-items: center;
       flex-wrap: nowrap;
-      background-color: #000;
       height: 15vh;
       padding: 0 2em;
       gap: 55px;
@@ -392,7 +451,6 @@ header .navbar .nav__menu.active {
       justify-content: space-between;
       align-items: center;
       flex-wrap: nowrap;
-      background-color: #000;
       height: 15vh;
       padding: 0 2em;
       gap: 55px;

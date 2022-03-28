@@ -17,14 +17,14 @@
     font-size: 1.8em;
     font-weight: 300;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--text2);
   }
 
   .job-title {
     padding: 20px 0;
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.2);
+    color: var(--text2);
     letter-spacing: 2px;
   }
 
@@ -98,14 +98,13 @@
       font-size: 2em;
       font-weight: 300;
       line-height: 1.5;
-      color: rgba(255, 255, 255, 0.3);
+      color: var(--text2);
     }
 
     .job-title {
       padding: 20px 0;
       font-size: 20px;
       font-weight: 600;
-      color: rgba(255, 255, 255, 0.2);
       letter-spacing: 2px;
     }
 
@@ -179,14 +178,14 @@
       font-size: 2.5em;
       font-weight: 300;
       line-height: 1.5;
-      color: rgba(255, 255, 255, 0.3);
+      color: var(--text2);
     }
 
     .job-title {
       padding: 20px 0;
       font-size: 20px;
       font-weight: 600;
-      color: rgba(255, 255, 255, 0.2);
+      color: var(--text2);
       letter-spacing: 2px;
     }
 

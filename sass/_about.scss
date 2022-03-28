@@ -43,12 +43,12 @@
 
       svg {
         width: 15%;
-        filter: invert(1);
+        filter: var(--invert);
       }
 
       .tailwind {
         width: 15%;
-        filter: invert(1);
+        filter: var(--invert);
         position: relative;
         top: -55px;
         left: 50px;
@@ -56,7 +56,7 @@
 
       .jquery {
         width: 40%;
-        filter: invert(1);
+        filter: var(--invert);
         position: relative;
         top: -60px;
       }
@@ -115,19 +115,19 @@
 
         svg {
           width: 10%;
-          filter: invert(1);
+          filter: var(--invert);
         }
 
         .jquery {
           width: 25%;
-          filter: invert(1);
+          filter: var(--invert);
           position: relative;
           top: 0;
         }
 
         .tailwind {
           width: 10%;
-          filter: invert(1);
+          filter: var(--invert);
           position: unset;
         }
       }
@@ -187,19 +187,19 @@
 
         svg {
           width: 8%;
-          filter: invert(1);
+          filter: var(--invert);
         }
 
         .jquery {
           width: 15%;
-          filter: invert(1);
+          filter: var(--invert);
           position: relative;
           top: 0;
         }
 
         .tailwind {
           width: 10%;
-          filter: invert(1);
+          filter: var(--invert);
         }
       }
     }
@@ -258,19 +258,19 @@
 
         svg {
           width: 6%;
-          filter: invert(1);
+          filter: var(--invert);
         }
 
         .jquery {
           width: 15%;
-          filter: invert(1);
+          filter: var(--invert);
           position: relative;
           top: 0;
         }
 
         .tailwind {
           width: 7%;
-          filter: invert(1);
+          filter: var(--invert);
         }
       }
     }
@@ -328,19 +328,19 @@
 
         svg {
           width: 6%;
-          filter: invert(1);
+          filter: var(--invert);
         }
 
         .jquery {
           width: 15%;
-          filter: invert(1);
+          filter: var(--invert);
           position: relative;
           top: 0;
         }
 
         .tailwind {
           width: 7%;
-          filter: invert(1);
+          filter: var(--invert);
           position: relative;
           top: 0;
           left: 0;

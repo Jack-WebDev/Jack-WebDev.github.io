@@ -9,12 +9,30 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  color: #fff;
+  color: var(--text);
+  transition: 500ms ease;
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: var(--secondary);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.dark_mode {
+  --header: #000;
+  --secondary: rgba(0, 0, 0, 0.95);
+  --text: #fff;
+  --text2: rgba(255, 255, 255, 0.3);
+  --invert: invert(1);
+  --toggle: rgb(255, 255, 255);
+}
+
+.light_mode {
+  --header: #fff;
+  --secondary: rgba(55, 155, 0, 0.1);
+  --text: var(var(--header));
+  --invert: invert(0);
+  --toggle: rba(211, 211, 211);
 }
 
 header {
@@ -30,8 +48,8 @@ header .navbar {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #000;
-  height: 10vh;
+  background-color: var(--header);
+  height: 15vh;
 }
 header .navbar .logo {
   padding-left: 2em;
@@ -41,6 +59,32 @@ header .navbar .logo .j, header .navbar .logo .w {
   color: #ff4500;
   font-size: 4rem;
   font-family: "Vujahday Script", cursive;
+}
+header .navbar label {
+  cursor: pointer;
+}
+header .navbar label #toggleMode {
+  display: none;
+}
+header .navbar label .toggle {
+  width: 2.5em;
+  height: 1.5em;
+  padding: 2px 5px;
+  border-radius: 5em;
+  background-color: #d3d3d3;
+}
+header .navbar label .toggle_circle {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-image: url(../images/Sun_Icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .navbar label #toggleMode:checked ~ .toggle > .toggle_circle {
+  background-image: url(../images/Moon_Icon.png);
+  transform: translateX(10px);
 }
 header .navbar .hamburger {
   padding-right: 3em;
@@ -64,7 +108,7 @@ header .navbar .nav__menu {
   gap: 20px;
   width: 100%;
   height: 92vh;
-  background-color: #000;
+  background-color: var(--header);
   text-align: center;
   padding: 4em 0 0;
   transform: translateX(-200%);
@@ -158,7 +202,6 @@ header .navbar .nav__menu.active .contact_item {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    background-color: #000;
     height: 15vh;
     padding: 0 2em;
     gap: 55px;
@@ -180,19 +223,6 @@ header .navbar .nav__menu.active .contact_item {
     padding-right: 2em;
     cursor: pointer;
     display: none;
-  }
-  header .navbar .hamburger .bar {
-    background-color: #ff4500;
-    width: 30px;
-    height: 2px;
-    margin: 5px 0;
-    transition: transform 500ms ease;
-  }
-  header .navbar .hamburger .bar:nth-child(2) {
-    transform: translateX(7px);
-  }
-  header .navbar .hamburger .bar:nth-child(3) {
-    transform: translateX(14px);
   }
   header .navbar .nav__menu {
     display: flex;
@@ -261,11 +291,37 @@ header .navbar .nav__menu.active .contact_item {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    background-color: #000;
     height: 15vh;
     padding: 0 2em;
     gap: 55px;
     position: relative;
+  }
+  header .navbar label {
+    position: relative;
+    left: -65%;
+    cursor: pointer;
+  }
+  header .navbar label #toggleMode {
+    display: none;
+  }
+  header .navbar label .toggle {
+    width: 5em;
+    height: 2em;
+    padding: 4px 5px;
+    border-radius: 5em;
+  }
+  header .navbar label .toggle_circle {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-image: url(../images/Sun_Icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header .navbar label #toggleMode:checked ~ .toggle > .toggle_circle {
+    background-image: url(../images/Moon_Icon.png);
+    transform: translateX(45px);
   }
   header .navbar .nav__menu {
     display: flex;
@@ -312,7 +368,6 @@ header .navbar .nav__menu.active .contact_item {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    background-color: #000;
     height: 15vh;
     padding: 0 2em;
     gap: 55px;
@@ -363,7 +418,6 @@ header .navbar .nav__menu.active .contact_item {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    background-color: #000;
     height: 15vh;
     padding: 0 2em;
     gap: 55px;
@@ -405,12 +459,30 @@ header .navbar .nav__menu.active .contact_item {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  color: #fff;
+  color: var(--text);
+  transition: 500ms ease;
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: var(--secondary);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.dark_mode {
+  --header: #000;
+  --secondary: rgba(0, 0, 0, 0.95);
+  --text: #fff;
+  --text2: rgba(255, 255, 255, 0.3);
+  --invert: invert(1);
+  --toggle: rgb(255, 255, 255);
+}
+
+.light_mode {
+  --header: #fff;
+  --secondary: rgba(55, 155, 0, 0.1);
+  --text: var(var(--header));
+  --invert: invert(0);
+  --toggle: rba(211, 211, 211);
 }
 
 .home {
@@ -429,13 +501,13 @@ body {
   font-size: 1.8em;
   font-weight: 300;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text2);
 }
 .home .job-title {
   padding: 20px 0;
   font-size: 16px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.2);
+  color: var(--text2);
   letter-spacing: 2px;
 }
 .home .btn_home {
@@ -498,13 +570,12 @@ body {
     font-size: 2em;
     font-weight: 300;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--text2);
   }
   .home .job-title {
     padding: 20px 0;
     font-size: 20px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.2);
     letter-spacing: 2px;
   }
   .home .btn_home {
@@ -566,13 +637,13 @@ body {
     font-size: 2.5em;
     font-weight: 300;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--text2);
   }
   .home .job-title {
     padding: 20px 0;
     font-size: 20px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.2);
+    color: var(--text2);
     letter-spacing: 2px;
   }
   .home .btn_home {
@@ -622,12 +693,30 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  color: #fff;
+  color: var(--text);
+  transition: 500ms ease;
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: var(--secondary);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.dark_mode {
+  --header: #000;
+  --secondary: rgba(0, 0, 0, 0.95);
+  --text: #fff;
+  --text2: rgba(255, 255, 255, 0.3);
+  --invert: invert(1);
+  --toggle: rgb(255, 255, 255);
+}
+
+.light_mode {
+  --header: #fff;
+  --secondary: rgba(55, 155, 0, 0.1);
+  --text: var(var(--header));
+  --invert: invert(0);
+  --toggle: rba(211, 211, 211);
 }
 
 .about {
@@ -667,18 +756,18 @@ body {
 }
 .about .skills .toolbox svg {
   width: 15%;
-  filter: invert(1);
+  filter: var(--invert);
 }
 .about .skills .toolbox .tailwind {
   width: 15%;
-  filter: invert(1);
+  filter: var(--invert);
   position: relative;
   top: -55px;
   left: 50px;
 }
 .about .skills .toolbox .jquery {
   width: 40%;
-  filter: invert(1);
+  filter: var(--invert);
   position: relative;
   top: -60px;
 }
@@ -727,17 +816,17 @@ body {
   }
   .about .skills .toolbox svg {
     width: 10%;
-    filter: invert(1);
+    filter: var(--invert);
   }
   .about .skills .toolbox .jquery {
     width: 25%;
-    filter: invert(1);
+    filter: var(--invert);
     position: relative;
     top: 0;
   }
   .about .skills .toolbox .tailwind {
     width: 10%;
-    filter: invert(1);
+    filter: var(--invert);
     position: unset;
   }
 }
@@ -786,17 +875,17 @@ body {
   }
   .about .skills .toolbox svg {
     width: 8%;
-    filter: invert(1);
+    filter: var(--invert);
   }
   .about .skills .toolbox .jquery {
     width: 15%;
-    filter: invert(1);
+    filter: var(--invert);
     position: relative;
     top: 0;
   }
   .about .skills .toolbox .tailwind {
     width: 10%;
-    filter: invert(1);
+    filter: var(--invert);
   }
 }
 @media screen and (min-width: 1100px) {
@@ -844,17 +933,17 @@ body {
   }
   .about .skills .toolbox svg {
     width: 6%;
-    filter: invert(1);
+    filter: var(--invert);
   }
   .about .skills .toolbox .jquery {
     width: 15%;
-    filter: invert(1);
+    filter: var(--invert);
     position: relative;
     top: 0;
   }
   .about .skills .toolbox .tailwind {
     width: 7%;
-    filter: invert(1);
+    filter: var(--invert);
   }
 }
 @media screen and (min-width: 1300px) {
@@ -901,17 +990,17 @@ body {
   }
   .about .skills .toolbox svg {
     width: 6%;
-    filter: invert(1);
+    filter: var(--invert);
   }
   .about .skills .toolbox .jquery {
     width: 15%;
-    filter: invert(1);
+    filter: var(--invert);
     position: relative;
     top: 0;
   }
   .about .skills .toolbox .tailwind {
     width: 7%;
-    filter: invert(1);
+    filter: var(--invert);
     position: relative;
     top: 0;
     left: 0;
@@ -922,12 +1011,30 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  color: #fff;
+  color: var(--text);
+  transition: 500ms ease;
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: var(--secondary);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.dark_mode {
+  --header: #000;
+  --secondary: rgba(0, 0, 0, 0.95);
+  --text: #fff;
+  --text2: rgba(255, 255, 255, 0.3);
+  --invert: invert(1);
+  --toggle: rgb(255, 255, 255);
+}
+
+.light_mode {
+  --header: #fff;
+  --secondary: rgba(55, 155, 0, 0.1);
+  --text: var(var(--header));
+  --invert: invert(0);
+  --toggle: rba(211, 211, 211);
 }
 
 .work {
@@ -990,8 +1097,8 @@ body {
 .work .projects .project_1 .btns .view, .work .projects .project_4 .btns .view, .work .projects .project_3 .btns .view, .work .projects .project_2 .btns .view {
   padding: 10px 20px;
   background-color: transparent;
-  border: 1px solid orangered;
-  color: orangered;
+  border: 1px solid #ff4500;
+  color: #ff4500;
   border-radius: 10px;
   transform: scale(1);
   transition: transform 500ms ease-out;
@@ -1065,8 +1172,8 @@ body {
   .work .projects .project_1 .btns .view, .work .projects .project_2 .btns .view, .work .projects .project_3 .btns .view, .work .projects .project_4 .btns .view {
     padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid orangered;
-    color: orangered;
+    border: 1px solid #ff4500;
+    color: #ff4500;
     border-radius: 10px;
     transform: scale(1);
     transition: transform 500ms ease-out;
@@ -1113,8 +1220,8 @@ body {
   .work .projects .project_2 .btns .view {
     padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid orangered;
-    color: orangered;
+    border: 1px solid #ff4500;
+    color: #ff4500;
     border-radius: 10px;
     transform: scale(1);
     transition: transform 500ms ease-out;
@@ -1160,8 +1267,8 @@ body {
   .work .projects .project_3 .btns .view {
     padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid orangered;
-    color: orangered;
+    border: 1px solid #ff4500;
+    color: #ff4500;
     border-radius: 10px;
     transform: scale(1);
     transition: transform 500ms ease-out;
@@ -1208,8 +1315,8 @@ body {
   .work .projects .project_4 .btns .view {
     padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid orangered;
-    color: orangered;
+    border: 1px solid #ff4500;
+    color: #ff4500;
     border-radius: 10px;
     transform: scale(1);
     transition: transform 500ms ease-out;
@@ -1285,8 +1392,8 @@ body {
   .work .projects .project_2 .btns .view {
     padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid orangered;
-    color: orangered;
+    border: 1px solid #ff4500;
+    color: #ff4500;
     border-radius: 10px;
     transform: scale(1);
     transition: transform 500ms ease-out;
@@ -1333,8 +1440,8 @@ body {
   .work .projects .project_4 .btns .view {
     padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid orangered;
-    color: orangered;
+    border: 1px solid #ff4500;
+    color: #ff4500;
     border-radius: 10px;
     transform: scale(1);
     transition: transform 500ms ease-out;
@@ -1410,8 +1517,8 @@ body {
   .work .projects .project_2 .btns .view {
     padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid orangered;
-    color: orangered;
+    border: 1px solid #ff4500;
+    color: #ff4500;
     border-radius: 10px;
     transform: scale(1);
     transition: transform 500ms ease-out;
@@ -1457,9 +1564,6 @@ body {
   }
   .work .projects .project_4 .btns .view {
     padding: 10px 20px;
-    background-color: transparent;
-    border: 1px solid orangered;
-    color: orangered;
     border-radius: 10px;
     transform: scale(1);
     transition: transform 500ms ease-out;
@@ -1476,12 +1580,30 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  color: #fff;
+  color: var(--text);
+  transition: 500ms ease;
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: var(--secondary);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.dark_mode {
+  --header: #000;
+  --secondary: rgba(0, 0, 0, 0.95);
+  --text: #fff;
+  --text2: rgba(255, 255, 255, 0.3);
+  --invert: invert(1);
+  --toggle: rgb(255, 255, 255);
+}
+
+.light_mode {
+  --header: #fff;
+  --secondary: rgba(55, 155, 0, 0.1);
+  --text: var(var(--header));
+  --invert: invert(0);
+  --toggle: rba(211, 211, 211);
 }
 
 .contact {
@@ -1491,13 +1613,13 @@ body {
 }
 .contact h2 {
   text-align: center;
-  color: orangered;
+  color: #ff4500;
   font-weight: 300;
   padding-bottom: 1em;
   padding-top: 2em;
 }
 .contact h2 span {
-  color: orangered;
+  color: #ff4500;
   font-size: 0.8em;
 }
 .contact p {
@@ -1517,7 +1639,7 @@ footer .attribution .icons a img {
   margin-right: 20px;
 }
 footer .attribution .icons a .github {
-  filter: invert(1);
+  filter: var(--invert);
 }
 footer .attribution .icons .whatsapp {
   width: 7%;
@@ -1531,7 +1653,7 @@ footer .attribution p {
   margin-top: 20px;
 }
 footer .attribution p a {
-  color: orangered;
+  color: #ff4500;
   text-decoration: none;
 }
 
@@ -1543,13 +1665,11 @@ footer .attribution p a {
   }
   .contact h2 {
     text-align: center;
-    color: orangered;
     font-weight: 300;
     padding-bottom: 1em;
     padding-top: 2em;
   }
   .contact h2 span {
-    color: orangered;
     font-size: 0.8em;
   }
   .contact p {
@@ -1568,7 +1688,7 @@ footer .attribution p a {
     margin-right: 20px;
   }
   footer .attribution .icons a .github {
-    filter: invert(1);
+    filter: var(--invert);
   }
   footer .attribution .icons .whatsapp {
     width: 4%;
@@ -1582,7 +1702,7 @@ footer .attribution p a {
     margin-top: 20px;
   }
   footer .attribution p span {
-    color: orangered;
+    color: #ff4500;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -1593,13 +1713,11 @@ footer .attribution p a {
   }
   .contact h2 {
     text-align: center;
-    color: orangered;
     font-weight: 300;
     padding-bottom: 1em;
     padding-top: 2em;
   }
   .contact h2 span {
-    color: orangered;
     font-size: 0.8em;
   }
   .contact p {
@@ -1618,9 +1736,6 @@ footer .attribution p a {
     width: 3%;
     margin-right: 20px;
   }
-  footer .attribution .icons a .github {
-    filter: invert(1);
-  }
   footer .attribution .icons .whatsapp {
     width: 3%;
   }
@@ -1632,8 +1747,5 @@ footer .attribution p a {
   footer .attribution p {
     margin-top: 30px;
     font-size: 20px;
-  }
-  footer .attribution p span {
-    color: orangered;
   }
 }/*# sourceMappingURL=portfolio.css.map */
