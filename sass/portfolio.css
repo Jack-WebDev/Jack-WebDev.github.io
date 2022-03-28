@@ -515,7 +515,6 @@ body {
   --glow-spread-color: rgba(255, 68, 0, 0.781);
   --enhanced-glow-color: rgb(212, 154, 133);
   --btn-color: rgb(255, 68, 0);
-  border: 0.25em solid var(--glow-color);
   padding: 1em 3em;
   color: var(--glow-color);
   font-size: 15px;
@@ -523,26 +522,13 @@ body {
   background-color: var(--btn-color);
   border-radius: 1em;
   outline: none;
-  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+  box-shadow: 0 0 0 0 var(--glow-color), 0 0 10px 10px var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
   text-shadow: 0 0 0.5em var(--glow-color);
   position: relative;
   transition: all 0.3s;
   top: 3em;
   cursor: pointer;
   text-decoration: none;
-}
-.home .btn_home::after {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  top: 120%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--glow-spread-color);
-  filter: blur(2em);
-  opacity: 0.7;
-  transform: perspective(2.5em) rotateX(35deg) scale(1, 0.6);
 }
 .home .btn_home:hover {
   color: var(--btn-color);
@@ -578,47 +564,6 @@ body {
     font-weight: 600;
     letter-spacing: 2px;
   }
-  .home .btn_home {
-    --glow-color: rgb(253, 190, 167);
-    --glow-spread-color: rgba(255, 68, 0, 0.781);
-    --enhanced-glow-color: rgb(212, 154, 133);
-    --btn-color: rgb(255, 68, 0);
-    border: 0.25em solid var(--glow-color);
-    padding: 1em 3em;
-    color: var(--glow-color);
-    font-size: 15px;
-    font-weight: bold;
-    background-color: var(--btn-color);
-    border-radius: 1em;
-    outline: none;
-    box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
-    text-shadow: 0 0 0.5em var(--glow-color);
-    position: relative;
-    transition: all 0.3s;
-    top: 5em;
-    cursor: pointer;
-  }
-  .home .btn_home::after {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: 0.7;
-    transform: perspective(2.5em) rotateX(35deg) scale(1, 0.6);
-  }
-  .home .btn_home:hover {
-    color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
-  }
-  .home .btn_home:active {
-    box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
-  }
 }
 @media screen and (min-width: 1100px) {
   .home {
@@ -645,47 +590,6 @@ body {
     font-weight: 600;
     color: var(--text2);
     letter-spacing: 2px;
-  }
-  .home .btn_home {
-    --glow-color: rgb(253, 190, 167);
-    --glow-spread-color: rgba(255, 68, 0, 0.781);
-    --enhanced-glow-color: rgb(212, 154, 133);
-    --btn-color: rgb(255, 68, 0);
-    border: 0.25em solid var(--glow-color);
-    padding: 1em 3em;
-    color: var(--glow-color);
-    font-size: 15px;
-    font-weight: bold;
-    background-color: var(--btn-color);
-    border-radius: 1em;
-    outline: none;
-    box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
-    text-shadow: 0 0 0.5em var(--glow-color);
-    position: relative;
-    transition: all 0.3s;
-    top: 5em;
-    cursor: pointer;
-  }
-  .home .btn_home::after {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: 0.7;
-    transform: perspective(2.5em) rotateX(35deg) scale(1, 0.6);
-  }
-  .home .btn_home:hover {
-    color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
-  }
-  .home .btn_home:active {
-    box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
   }
 }
 * {
