@@ -31,7 +31,7 @@ header .navbar {
   align-items: center;
   flex-wrap: wrap;
   background-color: #000;
-  height: 15vh;
+  height: 10vh;
 }
 header .navbar .logo {
   padding-left: 2em;
