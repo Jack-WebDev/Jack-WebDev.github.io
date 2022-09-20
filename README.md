@@ -1,8 +1,8 @@
-#My Personal Portfolio
 
-This is my personal portfolio. On it you will find projects I have done displaying my coding abilities using modern techniques and technologies.
+## Welcome! 👋
 
-I will keep updating it with other projects I do from #FrontEndMentor and my freelance work
+This is is the first iteration of my first personal website
 
+## Author
 
-
+- Twitter - [https://twitter.com/JackWebDev31]
